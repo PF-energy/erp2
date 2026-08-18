@@ -1,0 +1,66 @@
+// Default material costs. Shared by the initial DB seed and the
+// "reset this category to defaults" API action.
+module.exports = {
+  roofCoverings: [
+    ['concreteInterlocking', 'Concrete interlocking tile', 'm²', 13],
+    ['concretePlain', 'Concrete plain tile', 'm²', 21],
+    ['clayPlain', 'Clay plain tile', 'm²', 36],
+    ['fibreCementSlate', 'Fibre cement slate', 'm²', 26],
+    ['naturalSlate', 'Natural slate (Welsh/Spanish)', 'm²', 58],
+    ['standingSeamMetal', 'Standing seam metal', 'm²', 72],
+  ],
+  flatMembranes: [
+    ['felt3Layer', 'Torch-on felt (3-layer)', 'm²', 32],
+    ['grpFibreglass', 'GRP fibreglass', 'm²', 48],
+    ['epdmRubber', 'EPDM rubber', 'm²', 44],
+    ['singlePlyPVC', 'Single-ply PVC membrane', 'm²', 52],
+  ],
+  roofComponents: [
+    ['battens', 'Battens & counter-battens', 'm²', 4.2],
+    ['membrane', 'Breather membrane / underlay', 'm²', 3.4],
+    ['ridge', 'Dry ridge system', 'm', 24],
+    ['hipValley', 'Lead-lined hip / valley', 'm', 32],
+    ['leadwork', 'Code 4 lead flashing (abutments/chimney)', 'm', 65],
+    ['decking', 'Ply deck overlay (flat roof)', 'm²', 22],
+    ['insulation', 'Warm roof insulation upgrade', 'm²', 26],
+    ['trim', 'Edge trims / drip detail (flat roof)', 'm', 14],
+    ['stripOutPitched', 'Strip out existing — pitched, per layer', 'm²', 9],
+    ['stripOutFlat', 'Strip out existing — flat roof', 'm²', 12],
+  ],
+  solarPanels: [
+    ['standard', 'Standard mono panel (~400–440Wp)', 'panel', 145],
+    ['premium', 'Premium all-black high-efficiency panel', 'panel', 210],
+  ],
+  mounting: [
+    ['inRoof', 'In-roof mounting (integrated)', 'panel', 95],
+    ['onRoof', 'On-roof rail mounting', 'panel', 55],
+    ['flatBallasted', 'Flat roof ballasted frame', 'panel', 130],
+  ],
+  inverters: [
+    ['string', 'String inverter', 'system', 1450],
+    ['optimisers', 'String inverter + power optimisers', 'system', 2200],
+    ['micro', 'Microinverter', 'panel', 210],
+    ['hybrid', 'Hybrid inverter (battery-ready)', 'system', 2600],
+  ],
+  batteries: [
+    ['pylontech32', 'Pylontech 3.2 kWh module (stackable)', 'unit', 1450, 3.2],
+    ['givenergy52', 'GivEnergy 5.2 kWh AC battery', 'unit', 2700, 5.2],
+    ['givenergy96', 'GivEnergy 9.5 kWh AC battery', 'unit', 4600, 9.5],
+    ['tesla135', 'Tesla Powerwall 3, 13.5 kWh', 'unit', 6500, 13.5],
+  ],
+  ratesFees: [
+    ['scaffoldErect', 'Scaffold — erect & dismantle (flat fee)', 'job', 600],
+    ['scaffoldWeek', 'Scaffold — per additional week', 'week', 137.5],
+    ['skipSmall', 'Skip hire — small', 'job', 280],
+    ['skipLarge', 'Skip hire — large', 'job', 420],
+    ['buildingControl', 'Building Control notice fee', 'job', 240],
+    ['evCharger', 'EV charger — supply & fit', 'unit', 950],
+    ['mcsCommissioning', 'MCS certification & commissioning', 'job', 380],
+    ['dnoG99', 'DNO G99 application fee', 'job', 480],
+    ['labourPitchedLow', 'Roofing labour — low access', 'm²', 32],
+    ['labourPitchedMedium', 'Roofing labour — medium access', 'm²', 42],
+    ['labourPitchedSteep', 'Roofing labour — steep / cut-up', 'm²', 58],
+    ['labourFlat', 'Flat roofing labour', 'm²', 38],
+    ['labourSolarPerKW', 'Solar install labour', 'kWp', 340],
+  ],
+};
